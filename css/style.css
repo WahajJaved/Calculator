@@ -1,0 +1,51 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: rgba(189, 59, 59, 0.986);
+	align-content: center;
+}
+.container {
+	margin-right: 40%;
+	margin-left: 40%;
+	margin-top: 20vh;
+	margin-bottom: 20vh;
+	width: 20vw;
+	height: 59vh;
+	min-width: 200px;
+	display: grid;
+	grid-gap: 1px;
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	border: 0.2px solid rgba(0, 0, 0, 0.315);
+	border-radius: 10%;
+	background-color: white;
+}
+.gridButtons {
+	grid-column-end:span 1;
+	grid-row-end:span 1;
+	background-color: rgba(255, 255, 255, 0.795);
+	opacity: 0;
+	border: 0.1px solid burlywood;
+}
+.gridScreen {
+	grid-column-start: 1;
+	grid-column-end: span 4;
+	grid-row-start: 1;
+	grid-row-end: span 1;
+	text-align: end;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	font-size: 35px;
+	color:  rgba(46, 46, 46, 0.6);
+	/*background-color: rgba(0, 255, 255, 0.137);*/
+	border-bottom: 1px solid rgba(46, 46, 46, 0.6);
+	border-radius: 0%;
+}
+.textBox {
+	align-content: center;
+}
+h1 {
+	font-size: 40px;
+	text-align: center;
+}
