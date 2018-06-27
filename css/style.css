@@ -4,11 +4,14 @@ body {
 	background-color: rgba(189, 59, 59, 0.986);
 	align-content: center;
 }
+.heading {
+	font-family: 'Indie Flower', cursive;
+	color: white;
+}
 .container {
 	margin-right: 40%;
 	margin-left: 40%;
 	margin-top: 20vh;
-	margin-bottom: 20vh;
 	width: 20vw;
 	height: 59vh;
 	min-width: 200px;
