@@ -79,7 +79,7 @@ function keyPress(e) {
 	let text = '';
 
 	const screen = document.getElementById('screen');
-	const button = document.querySelector(`div[data-key="${key}"]`)	
+	const button = document.querySelector(`div[data-key="${key}"]`);
 	
 	
 	if (key == 8) {
