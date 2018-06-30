@@ -5,8 +5,14 @@ body {
 	align-content: center;
 }
 .heading {
-	font-family: 'Indie Flower', cursive;
-	color: white;
+	font-family: 'Tangerine', serif;
+	font-size: 60px;
+	color: rgb(255, 255, 255);
+}
+.noSelect {
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none;
 }
 .container {
 	margin-right: 40%;
@@ -17,7 +23,7 @@ body {
 	min-width: 200px;
 	display: grid;
 	grid-gap: 0px;
-	grid-template-rows: repeat(6, 1fr);
+	grid-template-rows: repeat(5, 1fr);
 	grid-template-columns: repeat(4, 1fr);
 	border: 0.2px solid rgba(0, 0, 0, 0.315);
 	border-radius: 5%;
@@ -30,14 +36,15 @@ body {
 
 	text-align: center;
 	color: rgba(46, 46, 46, 0.6);
-	padding-top: 5px;
+	padding-top: 15px;
 	/*background-color: rgba(255, 255, 255, 0.795);*/
 	border:  1px solid rgba(46, 46, 46, 0.1);
+    transition: all .07s ease;
 
 }
 .gridScreen {
-	grid-column-start: 1;
-	grid-column-end: span 4;
+	grid-column-start: 2;
+	grid-column-end: span 3;
 	grid-row-start: 1;
 	grid-row-end: span 1;
 	text-align: end;
@@ -48,7 +55,22 @@ body {
 	color:  rgba(46, 46, 46, 0.6);
 	/*background-color: rgba(0, 255, 255, 0.137);*/
 	border-bottom: 2px solid rgba(46, 46, 46, 0.4);
-	border-radius: 0%;
+	overflow: hidden;
+	
+}
+.mouseDown {
+	transform: scale(1.1);
+	border-color: rgba(189, 59, 59, 0.986);
+  	box-shadow: 0 0 5px rgba(189, 59, 59, 0.986);
+}
+.clear {
+	font-size: 21px;
+	grid-column-start: 1;
+	grid-column-end: span 1;
+	text-align: start;
+	padding-left: 20px;
+	padding-top: 30px;
+	color: rgba(255, 0, 0, 0.719);
 }
 .textBox {
 	align-content: center;
